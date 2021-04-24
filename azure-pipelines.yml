@@ -21,3 +21,9 @@ steps:
   - script: |
     yarn start
   displayName: 'yarn run'
+
+- task: Npm@1
+  inputs:
+    command:'custom'
+    customCommand:'run test'
+
